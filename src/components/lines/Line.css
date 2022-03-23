@@ -1,0 +1,15 @@
+.vertical-line {
+    height: 100%;
+    width: 1px;
+    border-left: 2px dashed rgba(200, 81, 88, 20%);
+    position: absolute;
+    z-index: -1;
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 100%;
+    border-top: 2px dashed rgba(200, 81, 88, 20%);
+    position: absolute;
+    z-index: -1;
+}

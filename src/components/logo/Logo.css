@@ -1,0 +1,43 @@
+.logo {
+    height: 78px;
+    width: 70px;
+    background: transparent;
+    z-index: -9;
+}
+
+.border-depth {
+    height: 75px;
+    width: 70px;
+    background: linear-gradient(to right, rgba(254, 84, 111, 1), rgba(254, 84, 111, 0.4));
+    border-radius: 50%;
+    z-index: -9;
+}
+
+.text-container {
+    height: 75px;
+    width: 70px;
+    background: linear-gradient(to right, rgba(254, 84, 111, 1), rgba(254, 84, 111, 0.4));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 5%;
+    bottom: 102%;
+    z-index: 9;
+}
+
+.text {
+    height: 65px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fcdae0;
+    border-radius: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    z-index: -9;
+}
+

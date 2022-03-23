@@ -1,0 +1,273 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    border: 15px solid #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.background-blob-1,
+.background-blob-2 {
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+.background-blob-1 {
+    left: 15px;
+    top: 15px;
+}
+
+.background-blob-2 {
+    right: 15px;
+    bottom: 15px;
+}
+
+.background-blob-3,
+.background-blob-4 {
+    position: absolute;
+    z-index: -10;
+}
+
+.background-blob-3 {
+    top: 10%;
+    left: 47%;
+}
+
+.background-blob-4 {
+    top: 30%;
+    left: 62%;
+}
+
+.line-1 {
+    top: 15px;
+    left: 35px;
+}
+
+.line-2 {
+    top: 15px;
+    left: 10%;
+}
+
+.line-3 {
+    top: 15px;
+    left: 30%;
+}
+
+.line-4 {
+    top: 15px;
+    left: 50%;
+}
+
+.line-5 {
+    top: 15px;
+    left: 70%;
+}
+
+.line-6 {
+    top: 15px;
+    left: 90%;
+}
+
+.line-7 {
+    top: 15px;
+    right: 35px;
+}
+
+.line-8 {
+    top: 35px;
+    left: 15px;
+}
+
+.line-9 {
+    top: 15%;
+    left: 15px;
+}
+
+.line-10 {
+    bottom: 35px;
+    left: 15px;
+}
+
+.details {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 9.5%;
+    left: 10.5%;
+    z-index: -9;
+}
+
+.hey-there {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 220px;
+    margin-left: -4%;
+    margin-top: -5%;
+    z-index: -9;
+    background: linear-gradient(to right, rgba(248, 211, 214, 0.5), rgba(243, 177, 183, 0.08));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+}
+
+.location-container {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: -25px;
+    right: -80px;
+    transform: rotate(45deg);
+    /*background: lightblue;*/
+}
+
+.character .upside-down {
+    background: linear-gradient(to bottom, #4A39B5, #DA27B3, #FE546F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.2;
+}
+
+.name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    color: #1D2D46;
+    font-weight: 800;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+}
+
+.role .flat-line {
+    width: 80px;
+}
+
+.role .role-text {
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin-left: 20px;
+    color: #1D2D46;
+}
+
+.description {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    width: 700px;
+    margin-top: 30px;
+    color: #1D2D46;
+}
+
+.description .italics {
+    font-style: italic;
+}
+
+.meet-me {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.meet-me .meet-me-line {
+    width: 80px;
+}
+
+.meet-me .meet-me-button-container {
+    margin-left: 20px;
+    height: 42px;
+    width: 180px;
+    background: linear-gradient(to right, #FE546F, #007BFF);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.meet-me .meet-me-button-container a {
+    text-decoration: none;
+}
+
+.meet-me .meet-me-button-container .meet-me-button {
+    height: 36px;
+    width: 174px;
+    border-radius: 30px;
+    background: #fceef0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet-me .meet-me-button-container .meet-me-button p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    background: linear-gradient(to right, #FE546F, #007BFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.meet-me .meet-me-button-container .meet-me-button .meet-me-arrow {
+    height: 25px;
+    margin-left: 7px;
+}
+
+.contact-line {
+    height: 220px;
+    position: absolute;
+    left: 29%;
+    bottom: -33%
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: -35.5%;
+}
+
+.social .flat-line {
+    width: 80px;
+}
+
+.social .social-links {
+    /*margin-left: 20px;*/
+}
+
+.social .social-links a {
+    text-decoration: none;
+}
+
+.social .social-links .github,
+.social .social-links .twitter,
+.social .social-links .dribble,
+.social .social-links .linkedin,
+.social .social-links .mail{
+    height: 30px;
+    margin-left: 20px;
+}
