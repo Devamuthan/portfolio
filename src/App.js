@@ -21,6 +21,12 @@ import styled from 'styled-components';
 export default class App extends React.Component {
     render() {
 
+        const githubURL = 'https://github.com/Devamuthan';
+        const twitterURL = 'https://google.com';
+        const dribbleURL = 'https://dribbble.com/Deva2001';
+        const linkedinURL = 'https://www.linkedin.com/in/devamuthansankar/';
+        const mailID = 'ds@presidio.com';
+
         const Circle = styled( ArcText )`
           background-color: transparent;
 
@@ -77,7 +83,7 @@ export default class App extends React.Component {
                     <div className={ 'meet-me' }>
                         <img src={ MeetMeLine } alt={ 'Meet Me Line' } className={ 'meet-me-line' }/>
                         <div className={ 'meet-me-button-container' }>
-                            <a href={'https://google.com'}>
+                            <a href={linkedinURL} target={'_blank'} rel="noreferrer">
                                 <div className={ 'meet-me-button' }>
                                     <p>Meet Me</p>
                                     <img src={ MeetMeArrow } alt={ 'Meet Me Arrow' } className={ 'meet-me-arrow' }/>
@@ -91,19 +97,19 @@ export default class App extends React.Component {
                     <div className={'social'}>
                         <img src={FlatLine} alt={'Flat Line'} className={'flat-line'} />
                         <div className={'social-links'}>
-                            <a href={'https://google.com'}>
+                            <a href={githubURL} target={'_blank'} rel={"noreferrer"}>
                                 <img  src={Github} alt={'Github'} className={'github'} />
                             </a>
-                            <a href={'https://google.com'}>
+                            <a href={twitterURL} target={'_blank'} rel="noreferrer">
                                 <img  src={Twitter} alt={'Twitter'} className={'twitter'} />
                             </a>
-                            <a href={'https://google.com'}>
+                            <a href={dribbleURL} target={'_blank'} rel="noreferrer">
                                 <img  src={Dribble} alt={'Dribble'} className={'dribble'} />
                             </a>
-                            <a href={'https://google.com'}>
+                            <a href={linkedinURL} target={'_blank'} rel="noreferrer">
                                 <img  src={Linkedin} alt={'Linkedin'} className={'linkedin'} />
                             </a>
-                            <a href={'https://google.com'}>
+                            <a href={`mailto:${mailID}`} target={'_blank'} rel="noreferrer">
                                 <img  src={Mail} alt={'Mail'} className={'mail'} />
                             </a>
                         </div>
