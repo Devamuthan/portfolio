@@ -123,6 +123,7 @@ html, body, #root {
 .hey-there {
     font-family: 'Playfair Display', serif;
     font-style: italic;
+    font-weight: 800;
     font-size: 220px;
     margin-left: -2%;
     margin-top: -4%;
@@ -132,6 +133,28 @@ html, body, #root {
     -webkit-text-fill-color: transparent;
     cursor: default;
     letter-spacing: 25px;
+}
+
+.hey-there::before {
+    content: '';
+    height: 5px;
+    width: 10%;
+    background: #f8d8dd;
+    position: absolute;
+    top: 29%;
+    left: -12.5%;
+    border-radius: 5px;
+}
+
+.hey-there::after {
+    content: '';
+    height: 5px;
+    width: 39.5%;
+    background: #fae4e8;
+    position: absolute;
+    top: 29%;
+    left: 96%;
+    border-radius: 5px;
 }
 
 .location-container {
@@ -344,9 +367,78 @@ html, body, #root {
 
 .star-content svg {
     height: 60%;
-    backdrop-filter: blur( 2px );
-    border-radius: 60% 30% 0 0 / 67% 15% 0 0;
+    backdrop-filter: blur(2px);
+    border-radius: 60% 30% 0 4% / 67% 15% 0 33%;
     /*border-top-left-radius: 62%;*/
     /*background: black;*/
 }
 
+.zig-zag-container {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    width: 20%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.zig-zag-line {
+    margin-right: 24%;
+    width: 80px;
+}
+
+.image-container {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    height: 70%;
+    width: 40%;
+    background: transparent;
+}
+
+.image-container .frame {
+    transform: translate(140%, 23%);
+
+}
+
+.image-container .profile-container {
+    transform: translate(154%, 129%);
+    backdrop-filter: blur(2px);
+    background: transparent;
+    height: 190px;
+    width: 190px;
+}
+
+.image-container .profile-container .profile-border {
+    height: 170px;
+    width: 170px;
+    background: linear-gradient(-45deg, #007BFF, #FE546F);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(6%, 5%);
+}
+
+.image-container .profile-container .profile-border .picture {
+    height: 162px;
+    width: 162px;
+    border-radius: 50%;
+}
+
+.image-container .profile-container .profile-filter {
+    height: 162px;
+    width: 162px;
+    background: linear-gradient(-45deg, #3494FC, #FB8195);
+    border-radius: 50%;
+    transform: translate(8.75%, -97.5%);
+    opacity: 1;
+    mix-blend-mode: overlay;
+}
+
+.image-container .mouse-arrow {
+    transform: translate(295%, 110%);
+}

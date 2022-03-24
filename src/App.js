@@ -21,6 +21,9 @@ import Image4 from './assets/image-4.svg';
 import Image5 from './assets/image-5.svg';
 import Image6 from './assets/image-6.svg';
 import ZigZagLine from './assets/zig-zag-line.svg'
+import Frame from './assets/frame.svg';
+import Profile from './assets/profile.jpg';
+import Arrow from './assets/mouse-pointer.svg'
 
 import Lines from "./components/lines/Lines";
 import Logo from "./components/logo/Logo";
@@ -144,6 +147,10 @@ export default class App extends React.Component {
                     <img src={ Image6 } alt={ 'Icon 6' } className={ 'image-6' }/>
                 </div>
 
+                <div className={'zig-zag-container'}>
+                    <img src={ZigZagLine} alt={'Zig Zag Line'} className={'zig-zag-line'} />
+                </div>
+
                 <div className={'star-content'}>
                     <svg width="700" height="600" viewBox="0 0 486 413" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_b_15_2)">
@@ -179,10 +186,18 @@ export default class App extends React.Component {
 
                 </div>
 
-                <div className={'zig-zag-container'}>
-                    <img src={ZigZagLine} alt={'Zig Zag Line'} className={'zig-zag-'}
-                </div>
+                <div className={'image-container'}>
+                    <div className={'profile-container'}>
+                        <div className={'profile-border'} >
+                            <img src={Profile} alt={'Profile'} className={'picture'} />
+                        </div>
+                        <div className={'profile-filter'} />
+                    </div>
+                    <img src={Frame} alt={'Frame'} className={'frame'}/>
 
+                    <img src={Arrow} alt={'Mouse Arrow'} className={'mouse-arrow'}/>
+
+                </div>
 
                 {/*<img src={ FlowLine } alt={ 'Flow Line' } className={ 'flow-line' }/>*/}
 
